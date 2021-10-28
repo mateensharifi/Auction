@@ -1,0 +1,6 @@
+Logged in users have the following actions available:
+	Can post an auction
+		User must select an auction period of 4, 12, or 24 hours
+		Users can bid or buy out an auction
+			To do so, users must connect a payment form to their account (credit/debit card, virtual wallet, etc.)
+			

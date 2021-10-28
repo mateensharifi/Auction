@@ -1,7 +1,9 @@
 Logged in users have the following actions available:
 	Can post an auction
 		User must select an auction period of 4, 12, or 24 hours
+			Auctions end either when the time hits 0 (in this case it will be sold to the highest bidder) or if an auction is bought out
 		Each auction must have a minimum bid and time limit
+			Minimum bid limit must be greater than or equal to $1
 			Buy out price is optional
 		Each auction will have a details section for the seller to describe the item
 		Once an auction is posted, it cannot be modified

@@ -1,6 +1,21 @@
 Logged in users have the following actions available:
 	Can post an auction
 		User must select an auction period of 4, 12, or 24 hours
-		Users can bid or buy out an auction
-			To do so, users must connect a payment form to their account (credit/debit card, virtual wallet, etc.)
-			
+		Each auction must have a minimum bid and time limit
+			Buy out price is optional
+		Each auction will have a details section for the seller to describe the item
+		Once an auction is posted, it cannot be modified
+	Users can bid or buy out an auction
+		Bidders can either bid an inputed amount or use a quick bid feature
+			Quick Bid: automatically bids the lowest amount of money possible to outbid the current bid (rounded to the nearest dollar)
+		To bid or buy out, users must connect a payment form to their account (credit/debit card, virtual wallet, etc.)
+			Bidding causes the auction to temporarily hold the amount bidded to ensure the funds are available
+				If the bidder is outbid, the funds are returned in full
+Sorting/Filtering
+	Auctions are filtered to show ones with least amount of time left first
+		User can select to change the filter to sort auctions by bid/buy out price
+	Search bar will compare search words with auction descriptions to sort auctions by relevancy
+To prevent sniping, if an auction timer is under one minute each subsequent bid resets the timer to one minute
+Notifications
+	When creating a profile, users have the option to provide their phone number/email
+		THey will receive a notification/email when they publish an auction, place a bid, are outbid, and win an auction

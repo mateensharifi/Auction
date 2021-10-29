@@ -1,0 +1,43 @@
+There will be the following classes:
+- Auction
+	- Parameters
+		- ID
+		- Minimum bid (> or = $1)
+		- Buyout price
+		- Time limit (4, 12, or 24 hours)
+		- Time uploaded
+		- Details
+		- Posted (int of 0 or 1; 0 means not posted, 1 means posted)
+		- HeldFunds
+		- WalletHoldingFunds
+		- BlockTime
+	- Methods
+		-
+- Quick Bid
+	- Parameters
+		- AuctionID
+		- BuyerWalletAddress
+		- SellerWalletAddress
+		- Tax
+		- CryptoPrice
+	- Methods
+		-
+- User
+	- Wallet
+	- PersonalIdentifier (phone number/email)
+
+	
+
+
+
+
+
+
+Can it be converted or not?
+Compromise of stuff the can't be converted?
+Name methods and say what they take, and what they spit out.
+New variable --> not a string (actual object) called address which corresponds to single user.
+Anything dealing with time --> not on the block, but block.
+
+Pick a block time (15 min per block)
+If happens in an hour --> it will take 4 blocks

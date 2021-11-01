@@ -13,7 +13,9 @@ There will be the following classes:
 		- BlockTime
 	- Methods
 		- UpdateUser(UserWallet) --> send message to user, updating them of auction status
+			- Time: 1 Block
 		- UpdateItemStatus (TimeLimit, TimeUploaded) --> delete auction if expired
+			- Time: 1 Block
 - QuickBid
 	- Parameters
 		- AuctionID
@@ -23,17 +25,30 @@ There will be the following classes:
 		- CryptoPrice
 	- Methods
 		- Bid(Auction ID, Wallet) --> begin transaction for user
+			- Time: 1 Block
 		- BuyOut(AuctionID, Wallet) --> begin and complete transaction for user
+			- Time: 5 Block
 - User
 	- Parameters
 		- Wallet
 		- PersonalIdentifier (phone number/email)
 	- Methods
 		- SendMessage(Message) --> send message to user's identification
+			- Time: 1 Block
 		- PostAuction(AuctionNumber) --> posts an auction for the user
+			- Time: 1 Block
 - UserSearch
 	- Parameters
 		- UserSearch
 		- Filter
 	- Methods
 		- Search(UserSearch, Filter) --> sorts the auctions
+			- Time: 1 Block
+
+Here is a priority list for features (higher up on list --> more important):
+- Buy/sell auctions
+- Users can create profiles
+- Auctions have expiration date
+- Prevent sniping of auctions
+- Users able to comment
+- Nice looking UI

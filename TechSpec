@@ -12,8 +12,9 @@ There will be the following classes:
 		- WalletHoldingFunds
 		- BlockTime
 	- Methods
-		-
-- Quick Bid
+		- UpdateUser(UserWallet) --> send message to user, updating them of auction status
+		- UpdateItemStatus (TimeLimit, TimeUploaded) --> delete auction if expired
+- QuickBid
 	- Parameters
 		- AuctionID
 		- BuyerWalletAddress
@@ -21,23 +22,18 @@ There will be the following classes:
 		- Tax
 		- CryptoPrice
 	- Methods
-		-
+		- Bid(Auction ID, Wallet) --> begin transaction for user
+		- BuyOut(AuctionID, Wallet) --> begin and complete transaction for user
 - User
-	- Wallet
-	- PersonalIdentifier (phone number/email)
-
-	
-
-
-
-
-
-
-Can it be converted or not?
-Compromise of stuff the can't be converted?
-Name methods and say what they take, and what they spit out.
-New variable --> not a string (actual object) called address which corresponds to single user.
-Anything dealing with time --> not on the block, but block.
-
-Pick a block time (15 min per block)
-If happens in an hour --> it will take 4 blocks
+	- Parameters
+		- Wallet
+		- PersonalIdentifier (phone number/email)
+	- Methods
+		- SendMessage(Message) --> send message to user's identification
+		- PostAuction(AuctionNumber) --> posts an auction for the user
+- UserSearch
+	- Parameters
+		- UserSearch
+		- Filter
+	- Methods
+		- Search(UserSearch, Filter) --> sorts the auctions

@@ -1,9 +1,19 @@
 import java.util.*;  
 public class Seller {
-    private ArrayList <Auction> aucList = new ArrayList <Auction> (); 
+   
+    public ArrayList <Auction> aucList = new ArrayList <Auction> (); 
+    int walletID; 
 
-    public void createAuction (double minBid, double buyPrice)
+    public Seller (int newWalletID)
     {
-       aucList.add(new Auction (minBid, buyPrice)); 
+       walletID = newWalletId;  
     }
+
+    public void createAuction (Double newMinBid, Double newBuyPrice, int newtimeLimit, int currentBlockNumber)
+    {
+       aucList.add(new Auction (newMinBid, newBuyPrice, newTimeLimit, currentBlockNumber, this)); 
+    }
+
+
+    
 }

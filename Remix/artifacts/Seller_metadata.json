@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletID",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"details": "Set & change owner",
+			"kind": "dev",
+			"methods": {},
+			"title": "Owner",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Remix/Seller.sol": "Seller"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Remix/Seller.sol": {
+			"keccak256": "0xc824ab445cccc5f5dae5a3023340de8f83844ef361da1de78f1e82a34977c8cc",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ac8dba4b0034506a00152e90b7b563d8eb7f06c0116c76a1b5c437f382d70651",
+				"dweb:/ipfs/QmNRfjwiqXSPPRupVia5aiYdpXzscq5sd7eSH1HJmnAQ3T"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,16 @@
+This Method from the UserSearch class seems complex:
+
+Search(UserSearch, Filter) --> sorts the auctions
+			- Time: 1 Block
+      
+      
+      
+I would break it into a first method that grabbed the set of posted auctions on the website --
+(where the 'posted' parameter == 1)
+
+grabLiveAuc ();
+
+And a second method which sorted those auctions using quicksort by whatever auction parameter
+inputed (low to high)
+
+sort(filter); 

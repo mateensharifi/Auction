@@ -5,15 +5,15 @@ pragma solidity >=0.7.0 <0.9.0;
  * @title Owner
  * @dev Set & change owner
  */
-contract User {
+ contract User {
    
-   address private wallet; 
+   address payable private wallet; 
    
-   constructor(address walletID){
+   constructor  (address payable walletID) payable{
     wallet = walletID; 
    }
     
-    function getAddress () public view returns(address)
+    function getAddress () public view returns(address payable)
     {
         return wallet; 
     }
